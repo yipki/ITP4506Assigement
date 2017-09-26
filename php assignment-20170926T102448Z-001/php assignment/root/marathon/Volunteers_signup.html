@@ -1,0 +1,90 @@
+<html>
+
+<head>
+  <title>Online Marathon Skills management system</title>
+  <link rel="stylesheet" href="stylesheet/stylesheet.css" />
+  <link rel="icon" type="image/png" href="icon/icon.png" />
+</head>
+<body bgcolor="#000000"  >
+
+  <div class="topbar" id="topbar">
+
+    <a class="img" href="main.html"><img src="icon/Main_icon.png" alt="logo" height="35" width="150"></a>
+
+
+    <div class="items" id="items">
+      <a class="sign" href="signin.php">sign in</a>
+      <label class="or">or</label>
+      <a class="sign" href="Runners_signup.html">sign up</a>
+    </div>
+    <div class="dropdown">
+      <img onclick="menuDrop()" class="menu" src="icon/menu_icon.png"  height="40" width="40" >
+      <div id="myDropdown" class="dropdown-content">
+        <a href="signin.php">sign in</a>
+        <a href="Runners_signup.html">sign up</a>
+      </div>
+    </div>
+  </div>
+  <div class="line">
+  </div>
+
+  <label class="signup">Sign up</label><br>
+
+      <form class="Volunteers_signup" name="Volunteers_signup" action="Volunteers_signup.php" method="POST">
+        <div class="type">
+        <input type="radio" name="type" id="type" value="runners_form"
+        onchange="javascript:window.location.href='Runners_signup.html'" />   runners
+        <input type="radio" name="type" id="type" value="volunteers_form" checked
+        onchange="javascript:window.location.href='Volunteers_signup.html'" />  volunteers
+        <input type="radio" name="type" id="type" value="sponsors_form"
+        onchange="javascript:window.location.href='sponsors_signup.html'" />  sponsors
+        </div>
+        <br>
+
+      First Name :<br>
+      <input class="signup_input" type="text" name="FirstName" id="FirstName" required
+      /><br>
+
+      Last Name :<br>
+      <input class="signup_input" type="text" name="LastName" id="LastName" required /><br>
+
+      Email: <br>
+      <input class="signup_input" type="email" name="Email" id="Email" required
+      title="name@domain" /><br>
+
+      Password :<br>
+      <input class="signup_input" type="password" name="Password" id="Password"
+      oninput="check(this.value)"     required
+      pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+      title="At least 8 include UpperCase, LowerCase, Number/SpecialChar" /><br>
+
+      Confirm Password :<br>
+      <input class="signup_input" type="password"  id="confirm_password" pattern = ""
+      required title="Please input the same password."/><br>
+
+      Gender :<br>
+      <input type="radio" name="Gender" id="Gender" value="M" required />   M
+      <input type="radio" name="Gender" id="Gender" value="F" />  F
+      <br>
+
+<input class="submit "type="submit" value="Sign up" />
+</form>
+
+
+
+
+
+
+<script>
+function check(password) {
+document.getElementById('confirm_password').pattern = password ;
+}
+
+function menuDrop() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+
+
+</body>
+</html>
