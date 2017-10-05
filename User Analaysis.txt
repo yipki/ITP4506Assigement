@@ -1,0 +1,39 @@
+User Analaysis
+¡EUser Characteristics
+a.Learning Style
+-Clear instructions
+-Step by step procedure
+
+b.Tool Preferences
+-Clear button
+-
+
+c.Physical differences
+-Moderate font sizes
+-Moderate picture sizes
+
+d.Cultural differences
+-Higher education background
+-Provide English version only
+
+e.Knowledge of job
+-Use computer occasionalyy
+-Mainly for student travel
+
+f.Application familiarity
+-A computer novice
+
+g.Primary and secondary users
+-Primary user: VTC student
+-Secondary user: public user
+
+¡ETechniques for observing and listening to users
+
+¡EEnvironment Analysis
+-The user will use our system at home, school by their notebook or vtc computer, therefore we will use some colorful interface since their display brightness maybe adjust lower. If we use some dark color, the interface may not display clear to the user.
+¡ERecruiting Users
+
+¡ETask Analysis (HTA)
+1.Scenarios
+2.Use cases
+3.Essential use cases
