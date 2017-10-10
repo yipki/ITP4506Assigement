@@ -31,8 +31,20 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav pull-right">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="hotel.html">Hotel</a></li>
-        <li><a href="Flight.html">Flight</a></li>
+        <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Hotel<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="HotelTaipei.html">TaiPei</a></li>
+							<li><a href="HotelTokyo.html">Tokyo</a></li>
+						</ul>
+					</li>
+          <li class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Flight<b class="caret"></b></a>
+  						<ul class="dropdown-menu">
+  							<li><a href="FlightTaipei.html">TaiPei</a></li>
+  							<li><a href="FlightTokyo.html">Tokyo</a></li>
+  						</ul>
+  					</li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="Register.html">Register & Login</a></li>
@@ -67,165 +79,55 @@
     </div>
   </div>
 </header>
-<!-- /Header -->
 
-<!-- Intro -->
-<section class="herotxt">
-<!--<div class="container text-center sectionBox">
-  <h2 >Welcome!</h2>
-  <p class="text-muted"> Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies<br/>
-    Sed elit imperdiet congue. Integer ultricies sed ligula eget tempus. </p>
-</div>-->
-
-<!-- /Intro-->
-
-<!-- Highlights - jumbotron -->
-<div class="jumbotron sectionBox">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 highlight">
-        <div class="h-caption">
-          <h4><i class="fa fa-users fa-2x circle"></i>MANAGEMENT</h4>
-        </div>
-        <div class="h-body">
-          <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 highlight">
-        <div class="h-caption">
-          <h4><i class="fa fa-bar-chart-o fa-2x circle"></i>PLANNING</h4>
-        </div>
-        <div class="h-body">
-          <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 highlight">
-        <div class="h-caption">
-          <h4><i class="fa fa-gears fa-2x circle"></i>MARKETING</h4>
-        </div>
-        <div class="h-body">
-          <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 highlight">
-        <div class="h-caption">
-          <h4><i class="fa fa-file-word-o fa-2x circle"></i>REPORTS</h4>
-        </div>
-        <div class="h-body">
-          <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
-        </div>
-      </div>
-    </div>
-    <!-- /row  -->
-
-  </div>
-</div>
 <!-- container -->
-<section class="sectionBox">
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-          <div class="heading">
-            <h2>About Us</h2>
-            <br/>
-          </div>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-              <blockquote class="blockquote-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid</p>
-                <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
-        </div>
-        <div class="col-md-6">
-            <div class="blockquote-box blockquote-info clearfix">
-              <div class="heading">
-                <h2>Our Services</h2>
-                <br/>
-              </div>
-                <div class="square pull-left">
-                    <i class="fa fa-pencil-square-o fa-3x circle"></i>
-                </div>
-                <h4>
-                    Planning</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                </p>
-            </div>
-            <div class="blockquote-box blockquote-success clearfix">
-                <div class="square pull-left">
-                     <i class="fa fa-cloud-download fa-3x circle"></i>
-                </div>
-                <h4>
-                    Marketing</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                </p>
-            </div>
-            <div class="blockquote-box blockquote-primary clearfix">
-                <div class="square pull-left">
-                    <i class="fa fa-university fa-3x circle"></i>
-                </div>
-                <h4>
-                    Growth Invest</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
+
 <footer id="footer" class="top-space">
+
   <div class="footer1">
     <div class="container">
       <div class="row">
-        <div class="col-md-5 panel">
-          <h3 class="panel-title">Lates News</h3>
-          <div class="panel-body">
-            <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Aenean leo lectus sollicitudin convallis eget libero. Aliquam laoreet tellus ut libero semper, egestas velit malesuada. Sed non risus eget dolor amet vestibulum ullamcorper. Integer feugiat molestie.</p>
-          </div>
-        </div>
+
         <div class="col-md-4 panel contact">
-          <h3 class="panel-title">
-          Contact Info
-          </h4>
+          <h3 class="panel-title">Created by</h4>
           <div class="panel-body">
-            <p>Lorem ipsum dolor amet, consectetur adipiscing ipsum dolor.</p>
-            <ul>
-              <li><i class="fa fa-phone"></i>1-123-345-6789</li>
-              <li><a href="#"><i class="fa fa-envelope-o"></i> contact@webthemez.com</a></li>
-              <li><i class="fa fa-flag"></i>123 Smith Drive, Baltimore, MD 21212</li>
-            </ul>
+          <p>Yip Chun Ki & Fung Kwan Yueng 2017</p>
           </div>
         </div>
+
         <div class="col-md-3 panel">
           <h3 class="panel-title">Follow Us</h3>
           <div class="panel-body">
-            <p class="follow-me-icons"> <a href=""><i class="fa fa-twitter fa-2"></i></a> <a href=""><i class="fa fa-dribbble fa-2"></i></a> <a href=""><i class="fa fa-github fa-2"></i></a> <a href=""><i class="fa fa-facebook fa-2"></i></a> <a href=""><i class="fa fa-youtube fa-2"></i></a> <a href=""><i class="fa fa-pinterest fa-2"></i></a> </p>
+            <p class="follow-me-icons">
+              <a href=""><i class="fa fa-twitter fa-2"></i></a>
+              <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+              <a href=""><i class="fa fa-github fa-2"></i></a>
+              <a href=""><i class="fa fa-facebook fa-2"></i></a>
+              <a href=""><i class="fa fa-youtube fa-2"></i></a>
+              <a href=""><i class="fa fa-pinterest fa-2"></i></a>
+            </p>
           </div>
         </div>
-      </div>
-      <!-- /row of panels -->
+
+      </div> <!-- /row of panels -->
     </div>
   </div>
+
   <div class="footer2">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 panel">
+        <div class="col-md-12 panel">
           <div class="panel-body">
-            <p class="simplenav"> <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="services.html">Services</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a> </p>
+            <p class="text-right">
+              Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
+            </p>
           </div>
         </div>
-        <div class="col-md-6 panel">
-          <div class="panel-body">
-            <p class="text-right"> Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a> </p>
-          </div>
-        </div>
-      </div>
-      <!-- /row of panels -->
+
+      </div> <!-- /row of panels -->
     </div>
   </div>
+
 </footer>
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
