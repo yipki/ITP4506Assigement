@@ -31,6 +31,7 @@ g.Primary and secondary users
 
 ¡EEnvironment Analysis
 -The user will use our system at home, school by their notebook or vtc computer, therefore we will use some colorful interface since their display brightness maybe adjust lower. If we use some dark color, the interface may not display clear to the user.
+
 ¡ERecruiting Users
 
 ¡ETask Analysis (HTA)
