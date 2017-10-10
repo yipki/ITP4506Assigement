@@ -3,6 +3,10 @@ User Analaysis
 a.Learning Style
 -Clear instructions
 -Step by step procedure
+- (Do-then-read)
+- (Since the target users of our website are the tertiary students 
+   in Hong Kong, we believe the habits learning style
+   of them should be Do-then-read.)
 
 b.Tool Preferences
 -Clear button
