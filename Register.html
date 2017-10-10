@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+      <title>Register</title>
+  <script type="text/javascript" src="jquery-1.11.1.js"></script>
+  <script type="text/javascript" language="javascript">
+  // function alert(data,func){
+  //   $('body').append('<div id="alert_replace" title="Comfirmation" style="display:none;">'+data+'</div>');
+  //
+  //   $(function() {
+  //     $("#alert_replace").dialog({
+  //       height:260,
+  //       modal: true,
+  //       buttons: {
+  //         'Yes': function() {
+  //           $(this).remove();
+  //         }
+  //         'No': function() {
+  //           $(this).remove();
+  //         }
+  //       }
+  //     });
+  //   });
+  // }
+  //
 
+  $(document).ready(function(){
+    $("#submit").click(function(){
+      alert("Email:" + $("#Email").val() + "\n"
+            + "First Name:" + $("#FirstName").val() + "\n"
+          + "Last Name:" + $("#LastName").val() + "\n"
+        + "Password:" + $("#Password").val() + "\n"
+      + "Gender:" + $("#Gender").val() + "\n"
+    + "Date of Birth:" + $("#dobDay").val()+" / " + $("#dobMonth").val() + "/ " +$("#dobYear").val() + "\n"
+  + "Country:" + $("#Country").val() + "\n");
+        });
+  });
+     </script>
 <!-- your webpage info goes here -->
-
-    <title>Register</title>
-
 	<meta name="author" content="your name" />
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
@@ -30,11 +61,7 @@
     </div>
 		<div id="content">
 			<h2>Register</h2>
-      <form class="runners_signup" name="runners_signup" action="Runners_signup.php" method="POST"
-    enctype="multipart/form-data">
-
-
-
+      <form >
     Email: <br>
     <input class="signup_input" type="email" name="Email" id="Email" required
     title="name@domain" /><br>
@@ -47,14 +74,10 @@
     <input class="signup_input" type="text" name="LastName" id="LastName" required /><br>
 
     Password :<br>
-    <input class="signup_input" type="password" name="Password" id="Password"
-    oninput="check(this.value)"     required
-    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-    title="At least 8 include UpperCase, LowerCase, Number/SpecialChar" /><br>
+    <input class="signup_input" type="password" name="Password" id="Password"/><br>
 
     Confirm Password :<br>
-    <input class="signup_input" type="password"  id="confirm_password" pattern = ""
-    required title="Please input the same password."/><br>
+    <input class="signup_input" type="password"  id="confirm_password" /><br>
 
     Gender :<br>
     <input type="radio" name="Gender" id="Gender" value="M" required />   M
@@ -490,14 +513,9 @@
     <input type="file" name="pp" id="pp" onchange="loadFile(event)" accept="image/*">
     <br><br>
 
-<input class="submit "type="submit" value="Sign up" />
+<input id="submit" type="submit" value="Register" />
 </form>
 
-
-
-			<p>
-				//
-			</p>
 		</div>
 		<div id="footer">
 			<p>
