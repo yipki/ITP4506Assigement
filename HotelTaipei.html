@@ -18,6 +18,8 @@
   <script type="text/javascript" language="javascript">
   $(document).ready(function(){
     $("#2").hide();$("#3").hide();$("#5").hide();$("#6").hide();$("#8").hide();$("#9").hide();$("#10").hide();$("#12").hide();$("#13").hide();
+    $("#15").hide();$("#16").hide();$("#17").hide();$("#19").hide();$("#20").hide();$("#22").hide();$("#23").hide();
+    $("#25").hide();$("#26").hide();
     $("#room1").change(function(){
       if($('#room1').val() == "standard double"){
         $("#1").show();
@@ -84,6 +86,74 @@
         $("#13").show();
         $("#11").hide();
         $("#12").hide();
+      }
+    });
+    $("#room5").change(function(){
+      if($('#room5').val() == "standard double"){
+        $("#15").show();
+        $("#14").hide();
+        $("#16").hide();
+        $("#17").hide();
+      } else if($('#room5').val() == "standard twins"){
+        $("#16").show();
+        $("#17").hide();
+        $("#14").hide();
+        $("#15").hide();
+      } else if($('#room5').val() == "superior twin"){
+          $("#14").show();
+          $("#15").hide();
+          $("#16").hide();
+          $("#17").hide();
+      } else{
+        $("#17").show();
+        $("#14").hide();
+        $("#15").hide();
+        $("#16").hide();
+      }
+    });
+    $("#room6").change(function(){
+      if($('#room6').val() == "standard double"){
+        $("#18").show();
+        $("#19").hide();
+        $("#20").hide();
+      } else if($('#room4').val() == "standard twins"){
+        $("#19").show();
+        $("#18").hide();
+        $("#20").hide();
+      } else{
+        $("#20").show();
+        $("#18").hide();
+        $("#19").hide();
+      }
+    });
+    $("#room7").change(function(){
+      if($('#room7').val() == "standard double"){
+        $("#21").show();
+        $("#22").hide();
+        $("#23").hide();
+      } else if($('#room4').val() == "standard twins"){
+        $("#22").show();
+        $("#23").hide();
+        $("#21").hide();
+      } else{
+        $("#23").show();
+        $("#22").hide();
+        $("#21").hide();
+      }
+    });
+    $("#room8").change(function(){
+      if($('#room8').val() == "standard double"){
+        $("#24").show();
+        $("#25").hide();
+        $("#26").hide();
+      } else if($('#room8').val() == "standard twins"){
+        $("#25").show();
+        $("#26").hide();
+        $("#24").hide();
+      } else{
+        $("#26").show();
+        $("#24").hide();
+        $("#25").hide();
       }
     });
   })
@@ -252,24 +322,26 @@
             <div class="thumbnail">
               <img src="assets/images/taipei3.jpg" alt="">
                 <div class="caption">
-                  <h4>Responisve</h4>
+                  <h4>COZZI酒店</h4>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
-                  <img src="assets/images/star-off-big.png" alt=""width=20px>
-                  <img src="assets/images/star-off-big.png" alt=""width=20px>
+                  <img src="assets/images/star-on-big.png" alt=""width=20px>
+                  <img src="assets/images/star-on-big.png" alt=""width=20px>
                 <p>
                   <h6>Room Choices:</h6>
-                  <select name="room choices" id="room1">
+                  <select name="room choices" id="room5">
+                    <option value="superior twin">Superior Twin</option>
                     <option value="standard double">Standard Double</option>
                     <option value="standard twins">Standard Twins</option>
                     <option value="signle room">Signle Room</option>
                   </select>
                 </p>
-                  <div id="1">Price: 500/night</div>
-                  <div id="2">Price: 400/night</div>
-                  <div id="3">Price: 300/night</div>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+                  <div id="14">Price: 800/night</div>
+                  <div id="15">Price: 600/night</div>
+                  <div id="16">Price: 520/night</div>
+                  <div id="17">Price: 300/night</div>
+              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
               </div>
             </div>
           </div>
@@ -277,7 +349,7 @@
             <div class="thumbnail">
               <img src="assets/images/taipei4.jpg" alt="">
                 <div class="caption">
-                  <h4>Responisve</h4>
+                  <h4>台北星辰飯店</h4>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
@@ -285,16 +357,16 @@
                   <img src="assets/images/star-off-big.png" alt=""width=20px>
                 <p>
                   <h6>Room Choices:</h6>
-                  <select name="room choices" id="room1">
+                  <select name="room choices" id="room6">
                     <option value="standard double">Standard Double</option>
                     <option value="standard twins">Standard Twins</option>
                     <option value="signle room">Signle Room</option>
                   </select>
                 </p>
-                  <div id="1">Price: 500/night</div>
-                  <div id="2">Price: 400/night</div>
-                  <div id="3">Price: 300/night</div>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+                  <div id="18">Price: 380/night</div>
+                  <div id="19">Price: 320/night</div>
+                  <div id="20">Price: 270/night</div>
+              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
               </div>
             </div>
           </div>
@@ -302,7 +374,7 @@
             <div class="thumbnail">
               <img src="assets/images/taipei5.jpg" alt="">
                 <div class="caption">
-                  <h4>Responisve</h4>
+                  <h4>晶華酒店</h4>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
@@ -310,16 +382,16 @@
                   <img src="assets/images/star-off-big.png" alt=""width=20px>
                 <p>
                   <h6>Room Choices:</h6>
-                  <select name="room choices" id="room1">
+                  <select name="room choices" id="room7">
                     <option value="standard double">Standard Double</option>
                     <option value="standard twins">Standard Twins</option>
                     <option value="signle room">Signle Room</option>
                   </select>
                 </p>
-                  <div id="1">Price: 500/night</div>
-                  <div id="2">Price: 400/night</div>
-                  <div id="3">Price: 300/night</div>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+                  <div id="21">Price: 480/night</div>
+                  <div id="22">Price: 450/night</div>
+                  <div id="23">Price: 320/night</div>
+              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
               </div>
             </div>
           </div>
@@ -327,23 +399,24 @@
             <div class="thumbnail">
               <img src="assets/images/taipei6.jpg" alt="">
                 <div class="caption">
-                  <h4>Responisve</h4>
+                  <h4>Moon Hotel</h4>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-on-big.png" alt=""width=20px>
-                  <img src="assets/images/star-off-big.png" alt=""width=20px>
+                  <img src="assets/images/star-on-big.png" alt=""width=20px>
+                  <img src="assets/images/star-on-big.png" alt=""width=20px>
                   <img src="assets/images/star-off-big.png" alt=""width=20px>
                 <p>
                   <h6>Room Choices:</h6>
-                  <select name="room choices" id="room1">
+                  <select name="room choices" id="room8">
                     <option value="standard double">Standard Double</option>
                     <option value="standard twins">Standard Twins</option>
                     <option value="signle room">Signle Room</option>
                   </select>
                 </p>
-                  <div id="1">Price: 500/night</div>
-                  <div id="2">Price: 400/night</div>
-                  <div id="3">Price: 300/night</div>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+                  <div id="24">Price: 640/night</div>
+                  <div id="25">Price: 530/night</div>
+                  <div id="26">Price: 420/night</div>
+              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
               </div>
             </div>
           </div>
@@ -374,7 +447,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <input class="btn btn-action pull-left" type="submit" value="Search" id=search><br/><br/>
+                  <a href="#" class="btn btn-action pull-left" role="button">Search</a>
                 </div>
               </div>
             </form>
@@ -391,7 +464,7 @@
             </div>
             <div class="row">
               <div class="col-sm-10">
-                <input class="btn btn-action pull-right" type="submit" value="Pay" id=search><br/><br/>
+                <a href="Payment.html" class="btn btn-action pull-left" role="button">Pay</a>
               </div>
             </div>
 
