@@ -27,6 +27,9 @@
         + "Country:" + $("#Country").val() + "\n");
         alert("Register successful");
       });
+      $("signin").click(function(){
+        alert("welcome!");
+      });
     });
 
     </script>
@@ -76,7 +79,7 @@
 		<div class="row">
 
 			<!-- Article main content -->
-			<article class="col-sm-8 maincontent">
+			<article class="col-sm-6 maincontent">
 				<header class="page-header">
 					<h1 class="page-title">Register</h1>
 				</header>
@@ -538,7 +541,7 @@
 			<!-- /Article -->
 
 			<!-- Sidebar -->
-			<aside class="col-sm-4 sidebar sidebar-right">
+			<aside class="col-sm-5 sidebar sidebar-right">
 
 				<div class="panel">
           <header class="page-header">
@@ -562,7 +565,7 @@
 
             Password :<br>
             <input class="signin_input" type="password" name="PW" id="PW" required /><br><br>
-            <input class="submit "type="submit" value="Sign in" />
+            <input type="submit" value="Sign in" id="signin"/>
           </form>
 				</div>
 
