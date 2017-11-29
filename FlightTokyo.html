@@ -19,6 +19,67 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+  <script src="jquery-1.11.1.js"></script>
+<script type ="text/javascript">
+$(document).ready(function() {
+  $('.thumbnail').hide();
+  $('#searchDate').click(function() {
+    $('.thumbnail').show();
+ $('#company').keyup(function() {
+   $(".thumbnail").hide().filter(":contains('"+ $(this).val() +"')").show();
+});
+});
+  $('#add01').click(function() {
+   $( "<a href=''>" +$('#caption01').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add02').click(function() {
+ $( "<a href=''>" +$('#caption02').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add03').click(function() {
+ $( "<a href=''>" +$('#caption03').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add04').click(function() {
+ $( "<a href=''>" +$('#caption04').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add05').click(function() {
+ $( "<a href=''>" +$('#caption05').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add06').click(function() {
+ $( "<a href=''>" +$('#caption06').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add07').click(function() {
+ $( "<a href=''>" +$('#caption07').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add08').click(function() {
+ $( "<a href=''>" +$('#caption08').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add09').click(function() {
+ $( "<a href=''>" +$('#caption09').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add10').click(function() {
+ $( "<a href=''>" +$('#caption10').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add11').click(function() {
+ $( "<a href=''>" +$('#caption11').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add12').click(function() {
+ $( "<a href=''>" +$('#caption12').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add13').click(function() {
+ $( "<a href=''>" +$('#caption13').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add14').click(function() {
+ $( "<a href=''>" +$('#caption14').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add15').click(function() {
+ $( "<a href=''>" +$('#caption15').text() + "</a><br />").prependTo('#divshopping');
+});
+$('#add16').click(function() {
+ $( "<a href=''>" +$('#caption16').text() + "</a><br />").prependTo('#divshopping');
+});
+});
+</script>
+
 </head>
 <body>
 <!-- Fixed navbar -->
@@ -64,7 +125,7 @@
 
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
-                <h5>Check in date <input type="date" id="checkin">  Check out date <input type="date" id="checkout"> </h5>
+                <h5>Check in date <input type="date" id="checkin">  Check out date <input type="date" id="checkout"> <input class="btn btn-action pull-right" type="submit" value="Search" id="searchDate"></h5>
 				<header class="page-header">
 					<h1 class="page-title">Tokyo</h1>
 				</header>
@@ -73,136 +134,240 @@
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/hkexpress.png" alt="">
-                <div class="caption">
-                  <h4>香港航空</h4>
+                <div class="caption" id="caption01">
+                  <h4>HKexpress</h4>
                   <p>Dapart:<br/>
                     09:40 am - 13:00 pm<br/>
                     (4hr20min)<br/>
-                    Return:<br/>
-                    19:30 pm - 23:30 pm<br/>
-                    (4hr)<br/>
+                    From HK to Tokyo
                     HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add01"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/hkexpress.png" alt="">
-                <div class="caption">
-                  <h4>香港航空</h4>
+                <div class="caption" id="caption02">
+                  <h4>HKexpress</h4>
                   <p>Dapart:<br/>
-                    10:40 am - 14:40 pm<br/>
-                    (4hr)<br/>
-                    Return:<br/>
-                    19:30 pm - 23:30 pm<br/>
-                    (4hr)<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
                     HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add02"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/hkexpress.png" alt="">
-                <div class="caption">
-                  <h4>香港航空</h4>
+                <div class="caption" id="caption03">
+                  <h4>HKexpress</h4>
                   <p>Dapart:<br/>
-                    12:20 pm - 16:30 pm<br/>
-                    (4hr10min)<br/>
-                    Return:<br/>
-                    19:30 pm - 23:30 pm<br/>
-                    (4hr)<br/>
-                    HK$ 3880
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
+                    HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add03"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/hkexpress.png" alt="">
-                <div class="caption">
-                  <h4>香港航空</h4>
-                  <p>Dapart:<br/>
-                    08:20 am - 12:400 pm<br/>
-                    (4hr20min)<br/>
-                    Return:<br/>
-                    17:30 pm - 21:50 pm<br/>
-                    (4hr20min)<br/>
-                    HK$ 3400
-                  </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-18 col-sm-6 col-md-3">
-            <div class="thumbnail">
-              <img src="assets/images/Japan.png" alt="">
-                <div class="caption">
-                  <h4>日本航空</h4>
+                <div class="caption" id="caption04">
+                  <h4>HKexpress</h4>
                   <p>Dapart:<br/>
                     09:40 am - 13:00 pm<br/>
                     (4hr20min)<br/>
-                    Return:<br/>
-                    19:30 pm - 23:30 pm<br/>
-                    (4hr)<br/>
+                    From HK to Tokyo
                     HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add04"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/Japan.png" alt="">
-                <div class="caption">
-                  <h4>日本航空</h4>
+                <div class="caption" id="caption05">
+                  <h4>Japan Airlines</h4>
                   <p>Dapart:<br/>
                     09:40 am - 13:00 pm<br/>
                     (4hr20min)<br/>
-                    Return:<br/>
-                    19:30 pm - 23:30 pm<br/>
-                    (4hr)<br/>
+                  From HK to Tokyo <br/>
                     HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add05"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/Japan.png" alt="">
-                <div class="caption">
-                  <h4>日本航空</h4>
+                <div class="caption" id="caption06">
+                  <h4>Japan Airlines</h4>
                   <p>Dapart:<br/>
-                    10:40 am - 12:00 pm<br/>
-                    (1hr20min)<br/>
-                    Return:<br/>
-                    18:30 pm - 19:50 pm<br/>
-                    (1hr20min)<br/>
-                    HK$ 2040
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add06"></p>
               </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
               <img src="assets/images/Japan.png" alt="">
-                <div class="caption">
-                  <h4>日本航空</h4>
+                <div class="caption" id="caption07">
+                  <h4>Japan Airlines</h4>
                   <p>Dapart:<br/>
-                    08:20 am - 12:400 pm<br/>
+                    09:40 am - 13:00 pm<br/>
                     (4hr20min)<br/>
-                    Return:<br/>
-                    17:30 pm - 21:50 pm<br/>
-                    (4hr20min)<br/>
-                    HK$ 3400
+                  From HK to Tokyo <br/>
+                    HK$ 3820
                   </p>
-              <p><a href="#" class="btn btn-info btn-xs" role="button">More..</a></p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add07"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/Japan.png" alt="">
+                <div class="caption" id="caption08">
+                  <h4>Japan Airlines</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
+                  </p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add08"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/hkexpress.png" alt="">
+                <div class="caption" id="caption09">
+                  <h4>HKexpress</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
+                    HK$ 3820
+                  </p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add09"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/hkexpress.png" alt="">
+                <div class="caption" id="caption10">
+                  <h4>HKexpress</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
+                    HK$ 3820
+                  </p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add10"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/hkexpress.png" alt="">
+                <div class="caption" id="caption11">
+                  <h4>HKexpress</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
+                    HK$ 3820
+                  </p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add11"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/hkexpress.png" alt="">
+                <div class="caption" id="caption12">
+                  <h4>HKexpress</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                    From HK to Tokyo
+                    HK$ 3820
+                  </p>
+              <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add12"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/Japan.png" alt="">
+                <div class="caption" id="caption13">
+                  <h4>Japan Airlines</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
+                  </p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add13"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/Japan.png" alt="">
+                <div class="caption" id="caption14">
+                  <h4>Japan Airlines</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
+                  </p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add14"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/Japan.png" alt="">
+                <div class="caption" id="caption15">
+                  <h4>Japan Airlines</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
+                  </p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add15"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img src="assets/images/Japan.png" alt="">
+                <div class="caption" id="caption16">
+                  <h4>Japan Airlines</h4>
+                  <p>Dapart:<br/>
+                    09:40 am - 13:00 pm<br/>
+                    (4hr20min)<br/>
+                  From HK to Tokyo <br/>
+                    HK$ 3820
+                  </p>
+            <p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add16"></p>
               </div>
             </div>
           </div>
@@ -219,14 +384,9 @@
               </header>
               <div class="row">
                 <div class="col-sm-12">
-                  <input class="form-control" type="text" placeholder="Place"><br/>
+                  <input class="form-control" type="text" placeholder="Company" id="company"><br/>
                 </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check in">
-                </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check out"> <br/>
-                </div>
+
                 <div class="col-sm-12">
                   <input class="form-control" type="text" placeholder="keywords"><br/>
                 </div>
