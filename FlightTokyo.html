@@ -108,6 +108,9 @@ $('#add16').click(function() {
  $("#divshopping")
  .animate({left:'400px',height:'300px',width:'265px',opacity:'1'},3000)
 });
+$("#reset").click(function(){
+$("#divshopping").empty();
+});
 });
 </script>
 
@@ -439,7 +442,8 @@ $('#add16').click(function() {
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-10">
+              <div class="col-sm-12">
+                <a href="#"class="btn btn-action pull-left" role="button" id="reset">Reset</a>
                 <a href="Payment.html" class="btn btn-action pull-right" role="button">Pay</a>
               </div>
             </div>

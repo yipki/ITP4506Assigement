@@ -197,6 +197,9 @@
      $( "<a href=''>"+"新宿酒店   "+$('#room8').val() +"   "+ $('#16').text()+"</a><br />").prependTo('#divshopping').css('color', 'black');
   $("#divshopping").animate({left:'400px',height:'300px',width:'265px',opacity:'1'},3000);
     });
+    $("#reset").click(function(){
+    $("#divshopping").empty();
+    });
   });
 
   </script>
@@ -500,6 +503,7 @@
             </div>
             <div class="row">
               <div class="col-sm-10">
+                <a href="#"class="btn btn-action pull-left" role="button" id="reset">Reset</a>
                 <a href="Payment.html" class="btn btn-action pull-right" role="button">Pay</a>
               </div>
             </div>
@@ -520,7 +524,7 @@
 					<div class="col-md-4 panel contact">
 						<h3 class="panel-title">Created by</h4>
 						<div class="panel-body">
-						<p>Yip Chun Ki & Fung Kwan Yueng 2017</p>
+						<p>Yip Chun Ki & Fung Kwan Yang 2017</p>
 						</div>
 					</div>
 
@@ -548,7 +552,7 @@
 					<div class="col-md-12 panel">
 						<div class="panel-body">
 							<p class="text-right">
-								Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
+								
 							</p>
 						</div>
 					</div>
