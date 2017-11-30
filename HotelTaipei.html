@@ -5,7 +5,7 @@
 <meta name="viewport"    content="width=device-width, initial-scale=1.0">
 <meta name="description" content="vTeam a Corporate Multipurpose Free Bootstrap Responsive template">
 <meta name="author" content="webThemez.com">
-<title>vTeam a Corporate Multipurpose Free Bootstrap Responsive template</title>
+<title>ITP4506 Assignment</title>
 <link rel="favicon" href="assets/images/favicon.png">
 <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -199,6 +199,9 @@ $("#divshopping").animate({left:'400px',height:'300px',width:'265px',opacity:'1'
 });
 $("#reset").click(function(){
 $("#divshopping").empty();
+});
+$('#payment').click(function() {
+  alert("Thank you for selecting HappyTravel Ltd! \n You have selected: \n 大來旅館 HKD500 \n 熱海大飯店 HKD200 \n 玖瑰精品會館 HKD320 \n 寒舍艾利酒店 HKD500 \n Total= HKD1520 \n Press ok to change to the payment page");
 });
   });
 
@@ -487,7 +490,7 @@ $("#divshopping").empty();
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <a href="#" class="btn btn-action pull-left" role="button">Search</a>
+                  <input class="btn btn-action pull-left" type="submit" value="Reload" id=search>
                 </div>
               </div>
             </form>
@@ -505,7 +508,7 @@ $("#divshopping").empty();
             <div class="row">
               <div class="col-sm-10">
                 <a href="#"class="btn btn-action pull-left" role="button" id="reset">Reset</a>
-                <a href="Payment.html" class="btn btn-action pull-right" role="button">Pay</a>
+                <a href="Payment.html" class="btn btn-action pull-right" role="button" id="payment">Pay</a>
               </div>
             </div>
 
