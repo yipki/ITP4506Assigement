@@ -17,6 +17,13 @@
 <script type="text/javascript" src="jquery-1.11.1.js"></script>
   <script type="text/javascript" language="javascript">
   $(document).ready(function(){
+    $('.thumbnail').hide();
+    $('#searchDate').click(function() {
+      $('.thumbnail').show();
+   $('#company').keyup(function() {
+     $(".thumbnail").hide().filter(":contains('"+ $(this).val() +"')").show();
+  });
+  });
     $("#2").hide();$("#3").hide();$("#5").hide();$("#6").hide();$("#8").hide();$("#9").hide();$("#10").hide();$("#12").hide();$("#13").hide();
     $("#15").hide();$("#16").hide();$("#17").hide();$("#19").hide();$("#20").hide();$("#22").hide();$("#23").hide();
     $("#25").hide();$("#26").hide();
@@ -158,6 +165,31 @@
     });
 
 
+$('#add01').click(function() {
+   $( "<a href=''>"+"大來旅館   "+$('#room1').val() +"   "+ $('#1').text()+"</a><br />").prependTo('#divshopping');
+  });
+  $('#add02').click(function() {
+   $( "<a href=''>"+"熱海大飯店   "+$('#room2').val() +"   "+ $('#2').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add03').click(function() {
+ $( "<a href=''>"+"玖瑰精品會館   "+$('#room3').val() +"   "+ $('#6').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add04').click(function() {
+ $( "<a href=''>"+"寒舍艾利酒店   "+$('#room4').val() +"   "+ $('#8').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add05').click(function() {
+ $( "<a href=''>"+"COZZI酒店   "+$('#room5').val() +"   "+ $('#3').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add06').click(function() {
+ $( "<a href=''>"+"台北星辰飯店   "+$('#room6').val() +"   "+ $('#11').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add07').click(function() {
+ $( "<a href=''>"+"晶華酒店   "+$('#room7').val() +"   "+ $('#14').text()+"</a><br />").prependTo('#divshopping');
+});
+$('#add08').click(function() {
+ $( "<a href=''>"+"Moon Hotel   "+$('#room8').val() +"   "+ $('#16').text()+"</a><br />").prependTo('#divshopping');
+});
+
   });
 
   </script>
@@ -212,7 +244,7 @@
 
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
-        <h5>Check in date <input type="date" id="checkin">  Check out date <input type="date" id="checkout"><input class="btn btn-action pull-right" type="submit" value="Search" id="searchDate"> </h5>
+        <h5>Check in date <input type="date" id="checkInDate">  Check out date <input type="date" id="checkOutDate"><input class="btn btn-action pull-right" type="submit" value="Search" id="searchDate"> </h5>
 				<header class="page-header">
 					<h1 class="page-title">TaiPei</h1>
 				</header>
@@ -236,11 +268,13 @@
                     <option value="signle room">Signle Room</option>
                   </select>
                 </p>
+                <div class="price" id="currPrice">
                   <div id="1">Price: 500/night</div>
                   <div id="2">Price: 400/night</div>
                   <div id="3">Price: 300/night</div>
               <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add01"></p>
               </div>
+            </div>
             </div>
           </div>
           <div class="col-xs-18 col-sm-6 col-md-3">
@@ -435,13 +469,7 @@
       				</header>
               <div class="row">
                 <div class="col-sm-12">
-                  <input class="form-control" type="text" placeholder="Place"><br/>
-                </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check in">
-                </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check out"> <br/>
+                  <input class="form-control" type="text" placeholder="Company" id="company"><br/>
                 </div>
                 <div class="col-sm-12">
                   <input class="form-control" type="text" placeholder="keywords"><br/>

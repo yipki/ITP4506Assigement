@@ -17,6 +17,13 @@
 <script type="text/javascript" src="jquery-1.11.1.js"></script>
   <script type="text/javascript" language="javascript">
   $(document).ready(function(){
+    $('.thumbnail').hide();
+    $('#searchDate').click(function() {
+      $('.thumbnail').show();
+   $('#company').keyup(function() {
+     $(".thumbnail").hide().filter(":contains('"+ $(this).val() +"')").show();
+  });
+  });
     $("#2").hide();$("#3").hide();$("#5").hide();$("#6").hide();$("#8").hide();$("#9").hide();$("#10").hide();$("#12").hide();$("#13").hide();
     $("#15").hide();$("#16").hide();$("#17").hide();$("#19").hide();$("#20").hide();$("#22").hide();$("#23").hide();
     $("#25").hide();$("#26").hide();
@@ -156,7 +163,33 @@
         $("#25").hide();
       }
     });
-  })
+
+
+    $('#add01').click(function() {
+       $( "<a href=''>"+"Hotel Villa Fontaine   "+$('#room1').val() +"   "+ $('#1').text()+"</a><br />").prependTo('#divshopping');
+      });
+      $('#add02').click(function() {
+       $( "<a href=''>"+"Millennium Mitsui   "+$('#room2').val() +"   "+ $('#2').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add03').click(function() {
+     $( "<a href=''>"+"皇宮酒店   "+$('#room3').val() +"   "+ $('#6').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add04').click(function() {
+     $( "<a href=''>"+"Intercontinental TOKYO   "+$('#room4').val() +"   "+ $('#8').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add05').click(function() {
+     $( "<a href=''>"+"TOKYO HOTEL   "+$('#room5').val() +"   "+ $('#3').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add06').click(function() {
+     $( "<a href=''>"+"歌舞酒店   "+$('#room6').val() +"   "+ $('#11').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add07').click(function() {
+     $( "<a href=''>"+"Sheraton   "+$('#room7').val() +"   "+ $('#14').text()+"</a><br />").prependTo('#divshopping');
+    });
+    $('#add08').click(function() {
+     $( "<a href=''>"+"新宿酒店   "+$('#room8').val() +"   "+ $('#16').text()+"</a><br />").prependTo('#divshopping');
+    });
+  });
 
   </script>
 
@@ -210,9 +243,9 @@
 
 			<!-- Article main content -->
 			<article class="col-sm-8 maincontent">
-        <h5>Check in date <input type="date" id="checkin">  Check out date <input type="date" id="checkout"> </h5>
+        <h5>Check in date <input type="date" id="checkInDate">  Check out date <input type="date" id="checkOutDate"><input class="btn btn-action pull-right" type="submit" value="Search" id="searchDate"> </h5>
 				<header class="page-header">
-					<h1 class="page-title">TaiPei</h1>
+					<h1 class="page-title">Tokyo</h1>
 				</header>
         <div class="row">
 
@@ -237,7 +270,7 @@
                   <div id="1">Price: 600/night</div>
                   <div id="2">Price: 480/night</div>
                   <div id="3">Price: 380/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" id="add "role="button">Add</a></p>
+              <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add01"></p>
               </div>
             </div>
           </div>
@@ -262,7 +295,7 @@
                   <div id="4">Price: 300/night</div>
                   <div id="5">Price: 200/night</div>
                   <div id="6">Price: 170/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+                <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add02"></p>
               </div>
             </div>
           </div>
@@ -289,7 +322,7 @@
                   <div id="8">Price: 700/night</div>
                   <div id="9">Price: 600/night</div>
                   <div id="10">Price: 500/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+              <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add03"></p>
               </div>
             </div>
           </div>
@@ -314,7 +347,7 @@
                   <div id="11">Price: 500/night</div>
                   <div id="12">Price: 440/night</div>
                   <div id="13">Price: 230/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+                <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add04"></p>
               </div>
             </div>
           </div>
@@ -341,7 +374,7 @@
                   <div id="15">Price: 600/night</div>
                   <div id="16">Price: 520/night</div>
                   <div id="17">Price: 300/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+              <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add05"></p>
               </div>
             </div>
           </div>
@@ -366,7 +399,7 @@
                   <div id="18">Price: 380/night</div>
                   <div id="19">Price: 320/night</div>
                   <div id="20">Price: 270/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+              <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add06"></p>
               </div>
             </div>
           </div>
@@ -391,7 +424,7 @@
                   <div id="21">Price: 480/night</div>
                   <div id="22">Price: 450/night</div>
                   <div id="23">Price: 320/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+              <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add07"></p>
               </div>
             </div>
           </div>
@@ -416,7 +449,7 @@
                   <div id="24">Price: 540/night</div>
                   <div id="25">Price: 530/night</div>
                   <div id="26">Price: 420/night</div>
-              </br><p><a href="#" class="btn btn-info btn-xs" role="button">Add</a></p>
+                <br/><p><input class="btn btn-info btn-xs" type="submit" value="Add" id="add08"></p>
               </div>
             </div>
           </div>
@@ -433,14 +466,9 @@
       				</header>
               <div class="row">
                 <div class="col-sm-12">
-                  <input class="form-control" type="text" placeholder="Place"><br/>
+                  <input class="form-control" type="text" placeholder="Company" id="company"><br/>
                 </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check in">
-                </div>
-                <div class="col-sm-6">
-                  <input class="form-control" type="text" placeholder="check out"> <br/>
-                </div>
+
                 <div class="col-sm-12">
                   <input class="form-control" type="text" placeholder="keywords"><br/>
                 </div>
