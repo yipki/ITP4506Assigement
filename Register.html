@@ -28,11 +28,19 @@
         aler("Register successful");
       });
       $("#signin").click(function(){
+<<<<<<< HEAD
         var type = 'success';
 		    var message = 'Welcome';
         var alertType = 'alert-'+ type;
         // alert('alert type is: '+ alertType);
         var htmlAlert = '<div class="alert '+ alertType +'"><h3>'+ type +' </h3><BR><p>'+ message +'</p></div>';
+=======
+        var type = 'Login successful';
+		    var message = 'Welcome'
+        var alertType = 'alert-'+ type;
+        // alert('alert type is: '+ alertType);
+        var htmlAlert = '<div class="alert '+ alertType +'"><h3>'+ type +'</h3><BR><p>'+ message +'</p></div>';
+>>>>>>> f84549fe3b59df41c6e0a9aa84863f9291898bf2
         // alert(htmlAlert);
         $(".alert-message").prepend(htmlAlert);
         $(".alert-message .alert").first().hide().fadeIn(200).delay(2000).fadeOut(1000, function () { $(this).remove(); });
