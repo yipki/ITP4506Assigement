@@ -31,11 +31,20 @@ $(document).ready(function() {
    $(".thumbnail").hide().filter(":contains('"+ $(this).val() +"')").show();
 });
 });
-  $('#add01').click(function() {
+  $("#add01").click(function() {
+    // var type = 'success';
+    // var message = 'Welcome';
+    // var alertType = 'alert-'+ type;
+    // var htmlAlert = '<div class="alert '+ alertType +'"><h3>Login '+ type +' </h3><BR><p>'+ message +'</p></div>';
+    // // alert(htmlAlert);
+    // $(".alert-message").prepend(htmlAlert);
+    // $(".alert-message .alert").first().hide().fadeIn(200).delay(2000).fadeOut(1000, function () { $(this).remove(); });
+
    $( "<a href=''>" +$('#caption01').text() + "</a><br />").prependTo('#divshopping').css('color', 'black');
    $("#divshopping").animate({left:'400px',height:'300px',width:'265px',opacity:'1'},3000);
 
 });
+
 $('#add02').click(function() {
  $( "<a href=''>" +$('#caption02').text() + "</a><br />").prependTo('#divshopping').css('color', 'black');
  $("#divshopping").animate({left:'400px',height:'300px',width:'265px',opacity:'1'},3000)
