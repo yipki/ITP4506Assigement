@@ -120,6 +120,9 @@ $('#add16').click(function() {
 $("#reset").click(function(){
 $("#divshopping").empty();
 });
+$('#payment').click(function() {
+  alert("Thank you for selecting HappyTravel Ltd! \n You have selected: \n HKexpress (09:40am - 13:00pm) From HK to Tokyo HKD3820 \n HKexpress (10:40am - 14:00pm) From HK to Tokyo HKD3820 \n Japan Airlines (11:40am - 16:00pm) From Tokyo to HK HKD2800 \n Japan Airlines (14:40pm - 16:00pm) From Tokyo to HK HKD3820 \nTotal= HKD 14260 \n Press ok to go to the payment page");
+});
 });
 </script>
 
@@ -453,7 +456,7 @@ $("#divshopping").empty();
             <div class="row">
               <div class="col-sm-12">
                 <a href="#"class="btn btn-action pull-left" role="button" id="reset">Reset</a>
-                <a href="Payment.html" class="btn btn-action pull-right" role="button">Pay</a>
+                <a href="Payment.html" class="btn btn-action pull-right" role="button" id="payment">Pay</a>
               </div>
             </div>
           </div>
