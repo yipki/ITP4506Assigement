@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Test 03</string>
+    <string name="shopping">Shopping</string>
+    <string name="shopping_category">Shopping Category</string>
+    <string name="importance">Importance</string>
+    <string name="desc">Description</string>
+    <string name="submit">Submit</string>
+    <string name="language">language</string>
+
+
+
+    <string-array name="MonthlyReport_month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string-array name="Shopping_category">
+        <item>dining</item>
+        <item>groceries</item>
+        <item>others</item>
+    </string-array>
+
+
+    <string-array name="DailyWork_category">
+        <item>Clean the house</item>
+        <item>Wash colthes</item>
+        <item>Do the dishes</item>
+        <item>pick up the children</item>
+    </string-array>
+
+    <string-array name="Importance">
+        <item>Emergency</item>
+        <item>Secondary</item>
+        <item>Not urgent</item>
+    </string-array>
+
+
+</resources>

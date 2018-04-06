@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aaddr.test03.MonthlyReport">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/menu"
+        app:backgroundMenuColor="@color/colorPrimary"
+        app:icon_height="50dp"
+        app:icon_width="50dp"
+        app:item_backgroundColor="@color/colorPrimary"
+        app:item_colorSelected="@color/colorAccent"
+        app:item_marginBottom="4dp"
+        app:item_marginLeft="4dp"
+        app:item_marginRight="4dp"
+        app:item_marginTop="4dp"
+        app:item_textColor="#fff"
+        app:item_textSize="7sp"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/ExReport"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/setEx"-->
+        <!--android:layout_alignBottom="@+id/setEx"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="14dp"-->
+        <!--android:text="Expense Report" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/DiReport"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/ExReport"-->
+        <!--android:layout_alignBottom="@+id/ExReport"-->
+        <!--android:layout_toEndOf="@+id/ExReport"-->
+        <!--android:text="Diet Report" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/setEx"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/pieChart"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginBottom="11dp"-->
+        <!--android:text="Set Expense" />-->
+
+        <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"></com.github.mikephil.charting.charts.PieChart>
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/pieChart"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:id="@+id/listView"/>-->
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/pieChart" />
+
+        <ImageView
+            android:id="@+id/tv_image_din"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/tv_image_gro"
+            android:layout_below="@+id/progressBar2"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/tv_dining" />
+
+    <TextView
+        android:id="@+id/tv_category_din"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@+id/tv_image_din"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/tv_image_din"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_count_din"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_alignBaseline="@+id/tv_category_din"
+        android:layout_alignBottom="@+id/tv_category_din"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/tv_image_gro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_image_din"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/tv_groceries"/>
+
+    <TextView
+        android:id="@+id/tv_category_gro"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@+id/tv_image_gro"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/tv_image_gro"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_count_gro"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_alignBaseline="@+id/tv_category_gro"
+        android:layout_alignBottom="@+id/tv_category_gro"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/tv_image_oth"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_image_gro"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/tv_others"/>
+
+    <TextView
+        android:id="@+id/tv_category_oth"
+        android:layout_width="100dp"
+        android:layout_height="23dp"
+        android:layout_alignTop="@+id/tv_image_oth"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/tv_image_oth"
+        android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_count_oth"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_alignBaseline="@+id/tv_category_oth"
+            android:layout_alignBottom="@+id/tv_category_oth"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/sp_month"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tv_category_din"
+            android:layout_below="@+id/menu"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_image_din"
+            android:layout_alignTop="@+id/sp_month"
+            android:text="Month:" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="80dp"
+            android:layout_height="39dp"
+            android:layout_alignBaseline="@+id/tv_month"
+            android:layout_alignBottom="@+id/tv_month"
+            android:layout_alignStart="@+id/tv_count_din"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aaddr.test03.dailyworkTodoList">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/tv_importance"
+        android:text="Daily Work!"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/tv_dwCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_label"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:text="Daily Work  Category"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/tv_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_dwCategory"
+        android:layout_alignTop="@+id/sp_importance"
+        android:text="Importance"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignStart="@+id/tv_importance"
+        android:layout_centerVertical="true"
+        android:text="Description"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <Spinner
+        android:id="@+id/sp_dwCategory"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sp_importance"
+        android:layout_alignTop="@+id/tv_dwCategory"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <Spinner
+        android:id="@+id/sp_importance"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_dwCategory"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/tv_dwCategory" />
+
+    <EditText
+        android:id="@+id/ed_desc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/sp_importance"
+        android:layout_alignTop="@+id/tv_desc"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_desc"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/tv_dwCategory"
+        android:text="Submit" />
+
+</RelativeLayout>

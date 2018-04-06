@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aaddr.test03.Main2Activity">
+
+
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/menu"
+        app:backgroundMenuColor="@color/colorPrimary"
+        app:icon_height="50dp"
+        app:icon_width="50dp"
+        app:item_backgroundColor="@color/colorPrimary"
+        app:item_colorSelected="@color/colorAccent"
+        app:item_marginBottom="4dp"
+        app:item_marginLeft="4dp"
+        app:item_marginRight="4dp"
+        app:item_marginTop="4dp"
+        app:item_textColor="#fff"
+        app:item_textSize="7sp"
+        />
+
+    <Button
+        android:id="@+id/btnEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="31dp"
+        android:text="Set Expense" />
+
+    <EditText
+        android:id="@+id/edEx"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEx"
+        android:layout_alignBottom="@+id/btnEx"
+        android:layout_toEndOf="@+id/btnEx"
+        android:hint="Expense" />
+
+    <TextView
+        android:id="@+id/tvEx"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edEx"
+        android:text="Monthly Budget: "
+        android:textSize="15dp" />
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar2"-->
+        <!--style="?android:progressBarStyleHorizontal"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:layout_below="@+id/tvEx"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="21dp"-->
+        <!--android:progressDrawable="@drawable/secondarycircle"-->
+        <!--android:progress="100"-->
+        <!--android:rotation="-90"/>-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignBottom="@+id/sumEx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/circle"
+        android:rotation="-90" />
+
+    <TextView
+        android:id="@+id/totalSp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/sumEx"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="40dp"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/sumEx"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/btnEx"
+        android:textAppearance="@color/colorPrimaryDark"
+        android:textSize="30dp" />
+
+
+
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/circular_progress_bar"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_below="@+id/btnEx"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="27dp"-->
+
+        <!--android:max="48"-->
+        <!--android:progress="1"-->
+        <!--android:progressDrawable="@drawable/circular_progressbar" />-->
+
+</RelativeLayout>
