@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pagsubok 03</string>
+    <string name="shopping">Shopping</string>
+    <string name="shopping_category">Kategorya ng Shopping</string>
+    <string name="importance">Kahalagahan</string>
+    <string name="desc">Paglalarawan</string>
+    <string name="submit">Ipasa</string>
+    <string name="language">wika</string>
+
+</resources>
